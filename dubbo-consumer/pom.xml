@@ -12,6 +12,25 @@
     <groupId>com.dubo.dubbo</groupId>
     <artifactId>dubbo-consumer</artifactId>
     <packaging>war</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.dubo.dubbo</groupId>
+            <artifactId>dubbo-provider01</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/dubbo-provider01-0.0.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.10</version>
+        </dependency>
 
+    </dependencies>
 
 </project>
